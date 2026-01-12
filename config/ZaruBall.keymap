@@ -141,10 +141,18 @@
             flavor = "tap-preferred";
         };
 
+
+        JP2: JP2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp AT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         JP6: JP6 {
             compatible = "zmk,behavior-mod-morph";
-            label = "JP6";
-            bindings = <&kp KP_NUMBER_6>, <&kp AMPS>;
+            bindings = <&kp N6>, <&kp CARET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -152,17 +160,7 @@
 
         JP7: JP7 {
             compatible = "zmk,behavior-mod-morph";
-            label = "JP7";
-            bindings = <&kp KP_NUMBER_7>, <&kp SQT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        JP2: JP2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "JP2";
-            bindings = <&kp KP_NUMBER_2>, <&kp DOUBLE_QUOTES>;
+            bindings = <&kp N7>, <&kp AMPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -170,8 +168,7 @@
 
         JP8: JP8 {
             compatible = "zmk,behavior-mod-morph";
-            label = "JP8";
-            bindings = <&kp KP_NUMBER_8>, <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp N8>, <&kp ASTRK>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -180,7 +177,7 @@
         JP9: JP9 {
             compatible = "zmk,behavior-mod-morph";
             label = "JP9";
-            bindings = <&kp KP_NUMBER_9>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp N9>, <&kp LPAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -227,11 +224,11 @@
             display-name = "Base";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&trans     &kp N1      &JP2   &kp N3    &kp N4          &kp N5                                    &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                                     &JP6      &JP7   &JP8       &JP9     &equol_minus        &kp DELETE
+&kp ESC    &kp N1      &JP2   &kp N3    &kp N4          &kp N5                                    &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                                     &JP6      &JP7   &JP8       &JP9     &equol_minus        &kp DELETE
 &kp DEL    &kp Q       &kp W  &kp E     &kp R           &kp T                                     &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                                   &kp Y     &kp U  &kp I      &kp O    &kp P               &lt 5 JP_AT
-&kp TAB    &kp A       &kp S  &kp D     &kp F           &kp G      &kp INS                        &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp LBKT                       &kp H     &kp J  &kp K      &kp L    &mt RIGHT_ALT SEMI  &mt RCTRL COLON
-&kp LSHFT  &kp Z       &kp X  &kp C     &kp V           &kp B      &mt LEFT_SHIFT LEFT_BRACKET    &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &mt RIGHT_SHIFT RIGHT_BRACKET  &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH            &mt RIGHT_SHIFT BACKSLASH
-&kp LCTRL  &kp C_MUTE         &kp LWIN  &lt 3 KP_ENTER  &kp SPACE  &mo 6                                                                                  &mt RIGHT_SHIFT LANG5          &kp BSPC                                                 &lt2_caret 2 0
+&kp TAB    &kp A       &kp S  &kp D     &kp F           &kp G      &kp INS                        &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp JP_LBRACKET                &kp H     &kp J  &kp K      &kp L    &mt RIGHT_ALT SEMI  &mt RCTRL JP_COLON
+&kp LSHFT  &kp Z       &kp X  &kp C     &kp V           &kp B      &mt LEFT_SHIFT JP_LBRACKET     &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &mt RIGHT_SHIFT JP_RBRACKET    &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH            &mt RIGHT_SHIFT JP_YEN
+&kp LCTRL  &kp C_MUTE         &kp LWIN  &lt 3 KP_ENTER  &kp SPACE  &mo 6                                                                                  &mt RIGHT_SHIFT GRAVE          &kp BSPC                                                 &lt 2 JP_TILDE
             >;
         };
 
@@ -240,8 +237,8 @@
             sensor-bindings = <&scroll_down_up>;
             bindings = <
 &to_layer_0 ESC           &to_layer_0 N1  &to_layer_0 N2  &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                     &trans  &trans  &trans  &trans                     &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8  &to_layer_0 N9  &to_layer_0 N0  &none
-&to_layer_0 DELETE        &none           &none           &none           &none           &none                              &trans  &trans  &trans  &trans                     &none           &none           &none           &none           &none           &to_layer_0 BACKSPACE
-&to_layer_0 TAB           &none           &mkp RCLK       &none           &mkp LCLK       &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &msc SCRL_UP    &mkp LCLK       &none           &mkp RCLK       &none           &to_layer_0 ENTER
+&to_layer_0 DELETE        &none           &none           &none           &none           &none                              &trans  &trans  &trans  &trans                     &none           &none           &none           &none           &none           &none
+&to_layer_0 TAB           &none           &mkp RCLK       &none           &mkp LCLK       &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &msc SCRL_UP    &mkp LCLK       &none           &mkp RCLK       &none           &none
 &to_layer_0 LSHIFT        &none           &mkp MB4        &none           &mkp MB5        &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp MB4        &none           &mkp MB5        &none           &none
 &to_layer_0 LEFT_CONTROL  &trans                          &trans          &trans          &trans          &trans                                               &trans           &trans                                                                          &trans
             >;
