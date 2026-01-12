@@ -50,17 +50,17 @@
 };
 
 //コンボ追加
-combos {
-    compatible = "zmk,combos";
-
+/ {
+    combos { compatible = "zmk,combos"; };
     moC: moC {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp INT3>, <&kp JP_PIPE>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+
+        mods = <(MOD_LSFT|MOD_RSFT)>;   // ←ここはOK
+         };
     };
 };
-
 
 / {
     behaviors {
