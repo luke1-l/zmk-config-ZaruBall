@@ -191,8 +191,8 @@
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
             bindings = <
 &kp LG(LS(S))  &kp F1     &kp F2         &kp F3     &kp F4      &kp F5                          &trans  &trans  &trans  &trans                           &kp F6         &kp F7     &kp F8        &kp F9     &kp F10        &kp F11
-&trans         &none      &kp N7         &kp N8     &kp N9      &KP_MINUS                       &trans  &trans  &trans  &trans                           &none          &kp LEFT   &kp UP_ARROW  &kp RIGHT  &none          &kp BACKSPACE
-&trans         &kp SLASH  &kp N4         &kp N5     &kp N6      &kp JP_PLUS    &msc SCRL_UP     &trans  &trans  &trans  &trans    &msc SCRL_DOWN         &kp PG_UP      &mkp LCLK  &kp DOWN      &mkp RCLK  &kp RIGHT_ALT  &kp KP_ENTER
+&trans         &none      &kp N7         &kp N8     &kp N9      &none                       &trans  &trans  &trans  &trans                           &none          &kp LEFT   &kp UP_ARROW  &kp RIGHT  &none          &kp BACKSPACE
+&trans         &kp SLASH  &kp N4         &kp N5     &kp N6      &kp JP_PLUS   &msc SCRL_UP     &trans  &trans  &trans  &trans    &msc SCRL_DOWN         &kp PG_UP      &mkp LCLK  &kp DOWN      &mkp RCLK  &kp RIGHT_ALT  &kp KP_ENTER
 &trans         &kp N0     &kp N1         &kp N2     &kp N3      &kp JP_EQUAL  &msc SCRL_RIGHT   &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp PAGE_DOWN  &none      &none         &none      &none          &none
 &trans         &none      &trans         &trans     &trans      &trans                                                            &kp SPACE              &mkp LCLK                                                         &kp LG(E)
             >;
