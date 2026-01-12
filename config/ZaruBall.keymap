@@ -96,6 +96,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        caret_tilde: caret_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CARET_TILDE";
+            bindings = <&kp CARET>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
 
