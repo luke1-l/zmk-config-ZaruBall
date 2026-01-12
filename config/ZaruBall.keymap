@@ -179,7 +179,6 @@
         bindings = <&kp N9>, <&kp LPAR>;
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 };
 
