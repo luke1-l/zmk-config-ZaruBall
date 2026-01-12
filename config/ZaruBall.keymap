@@ -112,34 +112,6 @@
 
             display-name = "SandS";
         };
-
-        equol_minus: equol_minus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EQUOL_MINUS";
-            bindings = <&kp KP_EQUAL>, <&kp KP_MINUS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        caret_tilde: caret_tilde {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CARET_TILDE";
-            bindings = <&kp CARET>, <&kp TILDE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        lt2_caret: lt2_caret {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT2_CARET";
-            bindings = <&mo>, <&caret_tilde>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
     };
 };
 
