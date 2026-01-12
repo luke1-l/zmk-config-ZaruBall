@@ -87,6 +87,15 @@
 
             display-name = "SandS";
         };
+
+        equol_minus: equol_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUOL_MINUS";
+            bindings = <&kp KP_EQUAL>, <&kp KP_MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
 
