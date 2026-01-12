@@ -191,13 +191,6 @@
 
             label = "MKP_EXIT_AML";
         };
-
-        win_E: win_E {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "WIN_E";
-        };
     };
 };
 
