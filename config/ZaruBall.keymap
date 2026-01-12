@@ -18,6 +18,9 @@
 #define HIGHER   6
 #define SCROLL   2
 
+//キー設定（日本語キーボードのまま）
+#define JP_AT           LEFT_BRACKET      // @
+
 // スクロール量の設定
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
