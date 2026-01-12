@@ -141,45 +141,44 @@
             flavor = "tap-preferred";
         };
 
+    mo2: mo2 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp N2>, <&kp AT>;
 
-        JP2: JP2 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N2>, <&kp AT>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+    mo6: mo6 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp N6>, <&kp CARET>;
 
-        JP6: JP6 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp CARET>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+    mo7: mo7 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp N7>, <&kp AMPS>;
 
-        JP7: JP7 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N7>, <&kp AMPS>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+    mo8: mo8 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp N8>, <&kp ASTRK>;
 
-        JP8: JP8 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp ASTRK>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+    mo9: mo9 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp N9>, <&kp LPAR>;
 
-        JP9: JP9 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N9>, <&kp LPAR>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 };
@@ -223,7 +222,7 @@
             display-name = "Base";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&kp ESC    &kp N1      &JP2   &kp N3    &kp N4          &kp N5                                    &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                                     &JP6      &JP7   &JP8       &JP9     &equol_minus        &kp DELETE
+&kp ESC    &kp N1      &mo2   &kp N3    &kp N4          &kp N5                                    &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                                     &mo6      &mo7   &mo8       &mo9     &equol_minus        &kp DELETE
 &kp DEL    &kp Q       &kp W  &kp E     &kp R           &kp T                                     &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                                   &kp Y     &kp U  &kp I      &kp O    &kp P               &lt 5 JP_AT
 &kp TAB    &kp A       &kp S  &kp D     &kp F           &kp G      &kp INS                        &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp JP_LBRACKET                &kp H     &kp J  &kp K      &kp L    &mt RIGHT_ALT SEMI  &mt RCTRL JP_COLON
 &kp LSHFT  &kp Z       &kp X  &kp C     &kp V           &kp B      &mt LEFT_SHIFT JP_LBRACKET     &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &mt RIGHT_SHIFT JP_RBRACKET    &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH            &mt RIGHT_SHIFT JP_YEN
