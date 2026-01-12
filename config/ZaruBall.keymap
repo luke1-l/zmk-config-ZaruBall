@@ -199,7 +199,7 @@
             >;
         };
 
-　　　　 higher_layer {
+         higher_layer {
             display-name = "HIGHER";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
