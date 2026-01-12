@@ -88,6 +88,27 @@
             display-name = "SandS";
         };
 
+        /* ===== 追加部分ここから ===== */
+
+        caret_tilde: caret_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp CARET>, <&kp TILDE>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            label = "CARET_TILDE";
+        };
+
+        lt2_caret: lt2_caret {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&caret_tilde>, <&mo 2>;
+            label = "LT2_^_~";
+        };
+
+        /* ===== 追加部分ここまで ===== */
+
         equol_minus: equol_minus {
             compatible = "zmk,behavior-mod-morph";
             label = "EQUOL_MINUS";
