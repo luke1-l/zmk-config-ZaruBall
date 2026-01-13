@@ -1,0 +1,32 @@
+name: Generate ZaruBall Keymap PDF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  draw-keymap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          pip install keymap-drawer
+          sudo apt-get update
+          sudo apt-get install -y inkscape
+
+      - name: Generate YAML from keymap
+        run: |
+          keymap parse -c config/ZaruBall.keymap > keymap.yaml
+
+      - name: Generate PDF
+        run: |
+          keymap draw keymap.yaml > keymap.pdf
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: ZaruBall-keymap-pdf
+          path: keymap.pdf
