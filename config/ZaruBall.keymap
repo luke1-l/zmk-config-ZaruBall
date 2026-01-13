@@ -100,6 +100,14 @@
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo MOUSE>;
         };
 
+        mo2: mo2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp AT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         // Customed Hold-Tap for SandS
 
         SandS: SandS {
