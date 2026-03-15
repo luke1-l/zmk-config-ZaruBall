@@ -281,10 +281,10 @@
             display-name = "Mouse";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&to_layer_0 ESC           &to_layer_0 N1  &to_layer_0 N2  &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                     &trans  &trans  &trans  &trans                     &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8  &to_layer_0 N9  &to_layer_0 N0  &none
-&to_layer_0 DELETE        &none           &none           &none           &none           &none                              &trans  &trans  &trans  &trans                     &none           &none           &none           &none           &none           &none
-&to_layer_0 TAB           &none           &mkp RCLK       &none           &mkp LCLK       &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &msc SCRL_UP    &mkp LCLK       &none           &mkp RCLK       &none           &none
-&to_layer_0 LSHIFT        &none           &mkp MB4        &none           &mkp MB5        &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp MB4        &none           &mkp MB5        &none           &none
+&to_layer_0 ESC           &to_layer_0 N1  &to_layer_0 jp2  &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                     &trans  &trans  &trans  &trans                     &to_layer_0 jp6  &to_layer_0 jp7  &to_layer_0 jp8  &to_layer_0 jp9  &to_layer_0 moB  &none
+&to_layer_0 DELETE        &none           &none       &none           &none       &none                              &trans  &trans  &trans  &trans                     &none           &none           &none           &none           &none           &none
+&to_layer_0 TAB           &none           &none       &none           &none       &none    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &msc SCRL_UP    &mkp LCLK       &none           &mkp RCLK       &none           &none
+&to_layer_0 LSHIFT        &none           &none       &none           &none       &none    &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp MB4        &none           &mkp MB5        &none           &none
 &to_layer_0 LEFT_CONTROL  &trans                          &trans          &trans          &trans          &trans                                               &trans           &trans                                                                          &trans
             >;
         };
