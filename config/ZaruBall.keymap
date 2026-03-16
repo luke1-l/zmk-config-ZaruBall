@@ -297,7 +297,7 @@
 &trans         &none      &none     &none     &kp UP    &none                   &trans  &trans  &trans  &trans                      &none                  &kp KP_N4     &kp KP_N5      &jp6          &kp KP_MINUS    &none
 &mkp MB4       &mkp MB5   &none     &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP    &trans  &trans  &trans  &trans    &kp SPACE         &kp LEFT_PARENTHESIS   &kp KP_N1     &jp2           &kp KP_N3     &kp JP_PLUS     &none
 &trans         &none      &none     &none     &kp END   &kp HOME   &kp PG_DN    &trans  &trans  &trans  &trans    &kp RA(X)         &kp RIGHT_PARENTHESIS  &kp KP_N0     &kp KP_COMMA   &kp KP_DOT    &kp JP_EQUAL    &none
-&kp LA(F11)    &kp RSHFT  &trans    &trans    &trans    &trans                                                    &kp KP_ENTER      &kp DEL                                                                           &studio_unlock
+&kp LA(F11)    &kp RSHFT            &trans    &trans    &trans     &trans                                                           &kp KP_ENTER           &kp DEL                                                    &studio_unlock
             >;
         };
 
@@ -308,8 +308,8 @@
 &kp LG(LS(S))  &kp F1     &kp F2         &kp F3     &kp F4      &kp F5                          &trans  &trans  &trans  &trans                           &kp F6         &kp F7     &kp F8        &kp F9     &kp F10        &kp F11
 &trans         &none      &kp N7         &kp N8     &kp N9      &kp KP_MINUS                    &trans  &trans  &trans  &trans                           &none          &kp LEFT   &kp UP_ARROW  &kp RIGHT  &none          &kp BACKSPACE
 &trans         &kp SLASH  &kp N4         &kp N5     &kp N6      &kp JP_PLUS   &msc SCRL_UP      &trans  &trans  &trans  &trans    &msc SCRL_DOWN         &kp PG_UP      &mkp LCLK  &kp DOWN      &mkp RCLK  &kp RIGHT_ALT  &kp KP_ENTER
-&trans         &kp N0     &kp N1         &kp N2     &kp N3      &kp JP_EQUAL  &msc SCRL_RIGHT   &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp PAGE_DOWN  &none      &none         &none      &none          &none
-&kp LC(LSHIFT)            &none      &kp KP_COMMA   &trans     &trans      &trans                                                            &kp SPACE              &mkp LCLK                                                         &kp LG(E)
+&kp LSHFT      &kp N0     &kp N1         &kp N2     &kp N3      &kp JP_EQUAL  &msc SCRL_RIGHT   &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp PAGE_DOWN  &none      &none         &none      &none          &none
+&kp LCTRL      &none      &kp KP_COMMA   &trans     &trans      &trans                                                            &kp SPACE              &mkp LCLK                                                         &kp LG(E)
             >;
         };
 
