@@ -293,10 +293,10 @@
             display-name = "Lower";
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
             bindings = <
-&kp LG(LS(S))  &none      &none     &none     &none     &none                   &trans  &trans  &trans  &trans                      &none                  &jp7          &jp8           &jp9          &kp KP_SLASH    &none
-&trans         &none      &none     &none     &kp UP    &none                   &trans  &trans  &trans  &trans                      &none                  &kp KP_N4     &kp KP_N5      &jp6          &kp KP_MINUS    &none
-&mkp MB4       &mkp MB5   &none     &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP    &trans  &trans  &trans  &trans    &kp SPACE         &kp LEFT_PARENTHESIS   &kp KP_N1     &jp2           &kp KP_N3     &kp JP_PLUS     &none
-&trans         &none      &none     &kp END   &kp HOME  &none      &kp PG_DOWN  &trans  &trans  &trans  &trans    &kp RA(X)         &kp RIGHT_PARENTHESIS  &kp KP_N0     &kp KP_COMMA   &kp KP_DOT    &kp JP_EQUAL    &none
+&kp LG(LS(S))  &none      &none     &none     &none     &none                     &trans  &trans  &trans  &trans                      &none                  &jp7          &jp8           &jp9          &kp KP_SLASH    &none
+&trans         &none      &none     &none     &kp UP    &none                     &trans  &trans  &trans  &trans                      &none                  &kp KP_N4     &kp KP_N5      &jp6          &kp KP_MINUS    &none
+&mkp MB4       &mkp MB5   &none     &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP      &trans  &trans  &trans  &trans    &kp SPACE         &kp LEFT_PARENTHESIS   &kp KP_N1     &jp2           &kp KP_N3     &kp JP_PLUS     &none
+&trans         &none      &none     &kp END   &kp HOME  &none      &kp PAGE_DOWN  &trans  &trans  &trans  &trans    &kp RA(X)         &kp RIGHT_PARENTHESIS  &kp KP_N0     &kp KP_COMMA   &kp KP_DOT    &kp JP_EQUAL    &none
 &kp LA(F11)    &kp RSHFT            &trans    &trans    &trans     &trans                                                           &kp KP_ENTER           &kp DEL                                                    &studio_unlock
             >;
         };
