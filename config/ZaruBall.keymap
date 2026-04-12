@@ -285,7 +285,7 @@
 &to_layer_0 DELETE        &to_layer_0 Q    &to_layer_0 W       &to_layer_0 E           &to_layer_0 R      &to_layer_0 T                      &trans  &trans  &trans  &trans                     &to_layer_0 Y   &to_layer_0 U   &to_layer_0 I   &to_layer_0 O   &to_layer_0 P   &trans
 &to_layer_0 TAB           &to_layer_0 A    &to_layer_0 S       &to_layer_0 D           &to_layer_0 F      &to_layer_0 G   &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &msc SCRL_UP    &mkp LCLK       &to_layer_0 K   &mkp RCLK       &mt RALT SEMI   &kp RIGHT_CONTROL
 &to_layer_0 LSHIFT        &to_layer_0 Z    &to_layer_0 X       &to_layer_0 C           &to_layer_0 V      &to_layer_0 B   &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp MB4        &none           &mkp MB5        &none           &kp RIGHT_SHIFT
-&to_layer_0 LEFT_CONTROL  &trans           &trans              &trans                  &trans             &trans                                                                                &trans          &trans                                                          &trans
+&LEFT_CONTROL             &trans           &trans              &trans                  &trans             &trans                                                                                &trans          &trans                                                          &trans
             >;
         };
 
