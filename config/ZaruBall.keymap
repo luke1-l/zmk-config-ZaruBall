@@ -46,7 +46,7 @@
 
 // スクロール量の設定
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 120
 
 
 &trackball_listener {
