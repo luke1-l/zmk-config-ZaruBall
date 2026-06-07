@@ -85,7 +85,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-            tap-ms = <15>; // スクロールのタップ時間
+            tap-ms = <20>; // スクロールのタップ時間
         };
 
         td0: tap_dance_0 {
