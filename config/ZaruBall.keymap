@@ -226,6 +226,13 @@
 
             display-name = "SandS";
         };
+        shift_to0_grave: shift_to0_grave {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&to0_and_grave>;
+};
     };
 };
 
@@ -233,8 +240,7 @@
 &sl { release-after-ms = <250>; }; // time needed for double click (for mkp_exit_AML)
 / {
     macros {
-        // When in AML, move to default layer when key (except mouse button) pressed
-
+        // When in AML...
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -242,8 +248,7 @@
             label = "TO_layer_0";
         };
 
-        // When LCLK pressed, exit AML (after 250ms cause by sticky layer
-
+        // When LCLK...
         mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -258,9 +263,20 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        // ★追加
+        to0_and_grave: to0_and_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings =
+                <&to 0>,
+                <&kp GRAVE>;
+
+            label = "TO0_AND_GRAVE";
+        };
     };
 };
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -284,7 +300,7 @@
 &to_layer_0 ESC           &trans           &trans              &trans                  &trans             &trans                                   &trans  &trans  &trans  &trans                                     &trans             &trans          &trans              &trans          &trans              &trans
 &to_layer_0 DELETE        &to_layer_0 Q    &to_layer_0 W       &to_layer_0 E           &to_layer_0 R      &to_layer_0 T                            &trans  &trans  &trans  &trans                                     &to_layer_0 Y      &to_layer_0 U   &to_layer_0 I       &to_layer_0 O   &to_layer_0 P       &lt 5 JP_AT
 &to_layer_0 TAB           &to_layer_0 A    &to_layer_0 S       &to_layer_0 D           &to_layer_0 F      &to_layer_0 G   &msc SCRL_DOWN           &trans  &trans  &trans  &trans    &msc SCRL_UP                     &to_layer_0 H      &mkp LCLK       &to_layer_0 K       &mkp RCLK       &mt RALT SEMI       &kp RIGHT_CONTROL
-&trans                    &to_layer_0 Z    &to_layer_0 X       &to_layer_0 C           &to_layer_0 V      &to_layer_0 B   &mt LSHFT JP_LBRACKET    &trans  &trans  &trans  &trans    &mt RIGHT_SHIFT JP_RBRACKET      &to_layer_0 N      &to_layer_0 M   &mkp MB4            &mkp MB5        &to_layer_0 FSLH    &mo 5
+&trans                    &to_layer_0 Z    &to_layer_0 X       &to_layer_0 C           &to_layer_0 V      &to_layer_0 B   &mt LSHFT JP_LBRACKET    &trans  &trans  &trans  &trans    &shift_to0_grave LSHFT 0         &to_layer_0 N      &to_layer_0 M   &mkp MB4            &mkp MB5        &to_layer_0 FSLH    &mo 5
 &kp LEFT_CONTROL          &trans           &trans              &trans                  &trans             &trans                                                                                                      &to_layer_0 GRAVE  &trans                                                                  &trans
             >;
         };
